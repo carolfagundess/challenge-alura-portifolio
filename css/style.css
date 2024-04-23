@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-primaria: #ffff;
+  --cor-secundaria: #eaf2fd;
+  --cor-fundo: #ededed;
+  --cor-texto: #464646;
+  --cor-icons: #2a7ae4;
+
+  --fonte-primaria: "Raleway", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-primaria);
+  size: 100vh;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  margin: 32 auto;
+  justify-content: center;
+  gap: 80px;
+}
+
+.cabecalho__icones__nome {
+  display: flex;
+  padding: 2% 0% 0% 0%;
+  margin: 0 100px;
+  align-items: center;
+}
+
+.cabecalho__icones__nome img,
+.cabecalho__icones__nome p {
+  display: inline-block;
+  vertical-align: middle; /* Alinha verticalmente */
+}
+
+.cabecalho__icones__item {
+  display: flex;
+  gap: 60px;
+  padding: 2% 0% 0% 0%;
+  top: 0;
+  right: 0;
+  align-items: center;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #464646;
+}
+
+.topo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--cor-fundo);
+  padding: 32px;
+  width: 90%;
+  box-sizing: border-box;
+  margin: 0 auto; /* centralizando horizontalmente */
+  justify-content: center; /* centralizando o conteúdo horizontalmente */
+}
+
+.topo__apresentacao {
+  margin-top: 20px;
+  padding-top: 50px;
+  padding-left: 50px;
+  width: 80%;
+  background-color: var(--cor-primaria);
+}
+
+.topo__frase {
+  font-size: 400%;
+  font-weight: bold;
+}
+
+.topo__texto {
+  margin-top: 30px;
+  font-size: 150%;
+}
+
+.foto {
+  margin-top: 20px;
+  background-color: var(--cor-primaria);
+}
+
+.topo__foto {
+  padding: 20px 40px;
+  border-radius: 150px;
+  width: 340px;
+  height: 340px;
+  color: var(--cor-primaria);
+}
+
+.redes__sociais {
+  flex-wrap: nowrap;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.redes__sociais li {
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente */
+}
+
+ul li {
+  margin: 40px 0;
+  margin-right: 150px;
+}
+
+.sobremim {
+  background-color: var(--cor-secundaria);
+  padding: 64px 500px 64px 130px;
+  margin: 32px 0;
+  align-items: center;
+  font-size: 28px;
+}
+
+.sobremim__paragrafo {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.dados {
+  background-color: var(--cor-primaria);
+  display: flex;
+  flex-direction: column;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills__titulo{
+  padding: 5%;
+}
+
+.lista_skills {
+  padding: 0 3%;
+  margin: 0 3%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.lista_skills .item:last-child {
+  margin-right: 0; /* Remove o espaço do último item */
+}
