@@ -58,6 +58,11 @@ ul li {
   list-style-type: none;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .link {
   text-decoration: none;
   color: #464646;
@@ -140,6 +145,15 @@ ul li {
   background-color: var(--cor-primaria);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 50px; /* Adicionei um padding para espaçamento interno */
+}
+
+.skills,
+.hobbies {
+  width: 50%;
 }
 
 .skills {
@@ -148,18 +162,179 @@ ul li {
   align-items: center;
 }
 
-.skills__titulo{
-  padding: 5%;
+.skills__titulo {
+  padding: 5% 0 10% 0;
+  text-align: center;
+  font-size: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.lista_skills {
-  padding: 0 3%;
-  margin: 0 3%;
+.lista__skills {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  align-items: center;
+  padding: 0 0 5% 0;
+  justify-content: center;
+  gap: 25px;
 }
 
-.lista_skills .item:last-child {
-  margin-right: 0; /* Remove o espaço do último item */
+.hobbies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hobbies__titulo {
+  padding: 5% 0 10% 0;
+  font-size: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.lista__hobbies {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0 5% 0;
+  justify-content: center;
+  text-align: center;
+  gap: 25px;
+}
+
+.titulo__conhecimentos {
+  background-color: var(--cor-secundaria);
+  text-align: center;
+}
+
+.conhecimentos {
+  padding: 5% 0;
+  background-color: var(--cor-secundaria);
+}
+
+.titulo__conhecimentos {
+  padding: 0 0 3% 0;
+  text-align: center;
+  font-size: 36px;
+}
+
+.conhecimento__itens {
+  display: flex;
+  gap: 50px;
+  padding: 0 12% 3% 12%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imagem__edu {
+  background-color: var(--cor-primaria);
+  width: 400px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conhecimento__item {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.formacao {
+  font-weight: 800;
+  font-size: 25px;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+.projetos {
+  background-color: var(--cor-primaria);
+}
+
+.projetos h2 {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.projetos_projetos {
+  padding: 3% 0 6% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projeto__div {
+  display: flex;
+  padding: 2%;
+  background-color: var(--cor-secundaria);
+  margin-bottom: 50px;
+}
+
+.projeto__texto_direito {
+  width: 450px;
+  padding: 13% 0 0 3%;
+  font-size: 20px;
+}
+
+.projeto__texto_esquerdo {
+  width: 450px;
+  padding: 13% 3% 0 0;
+  font-size: 20px;
+}
+
+.projeto__front {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  width: 116px;
+  height: 42px;
+  font-family: inherit;
+}
+
+.btn_repositorio {
+  width: 116px;
+  height: 42px;
+  margin: 20px;
+  background-color: var(--cor-primaria);
+  border-color: var(--cor-icons);
+  border-width: 1px;
+  color: var(--cor-icons);
+  font-size: 16px;
+}
+
+.btn_demo {
+  width: 116px;
+  height: 42px;
+  margin: 20px 0;
+  background-color: var(--cor-icons);
+  border-color: var(--cor-icons);
+  color: var(--cor-primaria);
+}
+
+.btn_repositorio:hover {
+  background-color: #c4c2c4;
+  cursor: pointer;
+}
+
+.btn_demo:hover {
+  background-color: #c4c2c4;
+  cursor: pointer;
+}
+
+.rodape{
+  text-align: center;
+  padding: 15px 0 10px 0;
+}
+
+.rodape p{
+  padding-top: 5px;
+  font-weight: bold;
 }

@@ -71,7 +71,7 @@
         <section class="dados">
             <div class="skills">
                 <h2 class="skills__titulo">Skills</h2>
-                <ul class="lista_skills">
+                <ul class="lista__skills">
                     <li class="item">
                         <img src="/img/.png" alt="">
                         <p>
@@ -111,15 +111,15 @@
                 </ul>
             </div>
             <div class="hobbies">
-                <h2 class="skills__titulo">Hobbies</h2>
-                <ul>
-                    <li>
+                <h2 class="hobbies__titulo">Hobbies</h2>
+                <ul class="lista__hobbies">
+                    <li class="item">
                         <img src="/img/car.png" alt="carro">
                         <p>
                             Viajar
                         </p>
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="/img/laptop.png" alt="Notebook">
                         <p>
                             Programar
@@ -131,20 +131,20 @@
                             Ouvir música
                         </p>
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="/img/tv_black_24dp 3.png" alt="Televisao">
                         <p>
                             Assistir vídeos
                         </p>
                     </li>
-                    <li>
+                    <li class="item">
                         <img src="/img/wifi.png" alt="Simbolo wifi">
                         <p>
                             Redes Sociais
                         </p>
                     </li>
-                    <li>
-                        <img src="/img/photo_camera_black_24dp 1.png" alt="Camera digital">
+                    <li class="item">
+                        <img src="/img/photo_camera_black_24dp 1.png" alt="">
                         <p>
                             Tirar fotos
                         </p>
@@ -152,52 +152,105 @@
                 </ul>
             </div>
         </section>
-        <section>
-            <h2>Formação acadêmica</h2>
-            <div>
-                <img src="/img/image 8.png" alt="Logo Alura">
-                <p>
-                    Formação Programação Iniciante T6 - ONE
-                </p>
-                <p>
-                    2024 - Alura
-                </p>
-            </div>
-            <div>
-                <img src="/img/IFSul-oferta-mais-de-10-mil-vagas-para-cursos-de-qualificação-profissional-a-distância 1.png"
-                    alt="Logo IFSUL">
-                <p>
-                    Análise e Desen. de SistemasONE
-                </p>
-                <p>
-                    2027 - IFSul
-                </p>
-            </div>
-            <div>
-                <img src="/img/logo-udemy 1.png" alt="Logo udemy">
-                <p>
-                    Linguagem de programação Java
-                </p>
-                <p>
-                    Em andamento - Nélio Alves em UDEMY
-                </p>
+        <section class="conhecimentos">
+            <h2 class="titulo__conhecimentos">Formação acadêmica</h2>
+            <div class="conhecimento__itens">
+                <div class="conhecimento__item">
+                    <p class="imagem__edu">
+                        <img src="/img/image 8.png" alt="Logo Alura">
+                    </p>
+                    <p class="formacao">
+                        Formação Programação Iniciante T6 - ONE
+                    </p>
+                    <p class="formacao__data">
+                        2024 - Alura
+                    </p>
+                </div>
+                <div class="conhecimento__item">
+                    <p class="imagem__edu">
+                        <img src="/img/IFSul-oferta-mais-de-10-mil-vagas-para-cursos-de-qualificação-profissional-a-distância 1.png"
+                            alt="Logo IFSUL">
+                    </p>
+                    <p class="formacao">
+                        Análise e Desenvolvimento de Sistemas
+                    </p>
+                    <p class="formacao__data">
+                        2027 - IFSul
+                    </p>
+                </div>
+                <div class="conhecimento__item">
+                    <p class="imagem__edu" aria-colspan="formacao">
+                        <img src="/img/logo-udemy 1.png" alt="Logo udemy">
+                    </p>
+                    <p class="formacao">
+                        Linguagem de programação Java
+                    </p>
+                    <p class="formacao__data">
+                        Em andamento - Nélio Alves em UDEMY
+                    </p>
+                </div>
             </div>
         </section>
-        <section>
-            <h2>Experiência profissional</h2>
-            apresentar projetos
+        <section class="projetos">
+            <h2 class="titulo__projetos">Experiência profissional</h2>
+            <div class="projetos_projetos">
+                <div class="projeto__div">
+                    <span><img width="750px" height="406px" src="/img/batalha-naval.png"
+                            alt="Jogo de batalha-naval com java"></span>
+                    <div class="projeto__texto_direito">
+                        <h3>Projeto Batalha Naval - Em Java</h3>
+                        <p>Avaliativa da Disciplina da Faculdade</p>
+                        <button class="btn_repositorio"><a target="_blank"
+                                href="https://github.com/carolfagundess/Projeto-Batalha-Naval.git">Repositório</a></button>
+                    </div>
+                </div>
+                <div class="projeto__div">
+                    <div class="projeto__texto_esquerdo">
+                        <h3>Projeto Secret Number - com HTML, CSS e JavaScript</h3>
+                        <p>Challenge Programação Iniciante T6 - ONE
+                        </p>
+                        <div class="projeto__front">
+                            <button class="btn_repositorio"><a target="_blank"
+                                    href="https://github.com/carolfagundess/primeiro-jogo-js.git">Repositório</a></button>
+                            <button class="btn_demo"><a target="_blank" href="https://jogo-js-coral.vercel.app">Ver
+                                    demo</a></button>
+                        </div>
+                    </div>
+                    <span><img width="750px" height="406px" src="/img/sorteador-numero.png" alt=""></span>
+                </div>
+                <div class="projeto__div">
+                    <span><img width="750px" height="406px" src="/img/sistema-lista.png" alt=""></span>
+                    <div class="projeto__texto_direito">
+                        <h3>
+                            Sistema lista de pessoas - Em JavaS</h3>
+                        <p>Avaliativa da Disciplina da Faculdade
+                        </p>
+                        <button class="btn_repositorio"><a target="_blank"
+                                href="https://github.com/carolfagundess/Sistema-Lista-Java.git">Repositório</a></button>
+                    </div>
+                </div>
+                <div class="projeto__div">
+                    <div class="projeto__texto_esquerdo">
+                        <h3>Primeiro Portifólio - com HTML e CSS</h3>
+                        <p>Challenge Programação Iniciante T6 - ONE
+                        </p>
+                        <div class="projeto__front">
+                            <button class="btn_repositorio"><a target="_blank"
+                                    href="https://github.com/carolfagundess/primeiro-portifolio-web.git">Repositório</a></button>
+                            <button class="btn_demo"><a target="_blank"
+                                    href="https://primeiro-portifolio-web.vercel.app">Ver demo</a></button>
+                        </div>
+                    </div>
+                    <span><img width="750px" height="406px" src="/img/primeiro-portifolio.png" alt=""></span>
+                </div>
+            </div>
         </section>
     </main>
 
     <!--RODAPE -->
-    <footer>
-        <section>
-            <h2>Contato</h2>
-            formulario----
-            <img src="" alt="">
-            <form action=""></form>
-        </section>
-        <p>Desenvolvido por Carolina Fagundes</p>
+    <footer class="rodape">
+        <p>Developed by
+            Carolina Fagundes</p>
         <p>Since 2024</p>
     </footer>
 </body>
