@@ -147,8 +147,9 @@ ul li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   height: 100vh;
-  padding: 50px; /* Adicionei um padding para espaçamento interno */
+  padding: 0px 0px 100px 0; /* Adicionei um padding para espaçamento interno */
 }
 
 .skills,
@@ -166,8 +167,7 @@ ul li {
   padding: 5% 0 10% 0;
   text-align: center;
   font-size: 30px;
-  margin-right: auto;
-  margin-left: auto;
+  text-align: center;
 }
 
 .lista__skills {
@@ -176,7 +176,7 @@ ul li {
   align-items: center;
   padding: 0 0 5% 0;
   justify-content: center;
-  gap: 25px;
+  gap: 50px;
 }
 
 .hobbies {
@@ -189,8 +189,7 @@ ul li {
 .hobbies__titulo {
   padding: 5% 0 10% 0;
   font-size: 30px;
-  margin-right: auto;
-  margin-left: auto;
+  text-align: center;
 }
 
 .lista__hobbies {
@@ -200,7 +199,7 @@ ul li {
   padding: 0 0 5% 0;
   justify-content: center;
   text-align: center;
-  gap: 25px;
+  gap: 50px;
 }
 
 .titulo__conhecimentos {
