@@ -23,7 +23,7 @@ body {
   size: 100vh;
 }
 
-.cabecalho {
+#cabecalho {
   display: flex;
   flex-direction: row;
   font-size: 1rem;
@@ -45,7 +45,7 @@ body {
   vertical-align: middle; /* Alinha verticalmente */
 }
 
-.cabecalho__icones__item {
+.menu {
   display: flex;
   gap: 60px;
   padding: 2% 0% 0% 0%;
@@ -161,6 +161,7 @@ ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
 }
 
 .skills__titulo {
@@ -173,9 +174,8 @@ ul li {
 .lista__skills {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  margin: auto;
   padding: 0 0 5% 0;
-  justify-content: center;
   gap: 50px;
 }
 
@@ -184,6 +184,7 @@ ul li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0;
 }
 
 .hobbies__titulo {
@@ -195,11 +196,9 @@ ul li {
 .lista__hobbies {
   display: flex;
   flex-direction: row;
-  align-items: center;
   padding: 0 0 5% 0;
-  justify-content: center;
-  text-align: center;
-  gap: 50px;
+  margin: auto;
+  gap: 30px;
 }
 
 .titulo__conhecimentos {
