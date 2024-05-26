@@ -120,13 +120,11 @@ a{
 
 .redes__sociais li {
   display: flex;
-  align-items: center; /* Alinha os itens verticalmente */
-}
-
-ul li {
+  align-items: center;
   margin: 40px 0;
   margin-right: 150px;
 }
+
 
 #sobremim {
   background-color: var(--cor-secundaria);
@@ -147,59 +145,50 @@ ul li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
-  height: 100vh;
-  padding: 0px 0px 100px 0; /* Adicionei um padding para espaçamento interno */
+  width: 100%;
 }
 
-.skills,
-.hobbies {
-  width: 50%;
-}
 
-#skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-}
-
-.skills__titulo {
-  padding: 5% 0 10% 0;
-  text-align: center;
-  font-size: 30px;
-  text-align: center;
+#skills,
+#hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .lista__skills {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  padding: 0 0 5% 0;
-  gap: 50px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+    padding-bottom: 10%;
 }
 
-#hobbies {
-  display: flex;
-  flex-direction: column;
+
+.imagem__dados{
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.item {
+  text-align: center;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin: 10px; /* Ajuste conforme necessário */
 }
 
-.hobbies__titulo {
-  padding: 5% 0 10% 0;
-  font-size: 30px;
+.skills__titulo{
+  padding: 10% 0 5% 0;
   text-align: center;
+  font-size: 30px;
 }
 
-.lista__hobbies {
-  display: flex;
-  flex-direction: row;
-  padding: 0 0 5% 0;
-  margin: auto;
-  gap: 30px;
-}
 
 .titulo__conhecimentos {
   background-color: var(--cor-secundaria);
